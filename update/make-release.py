@@ -203,7 +203,7 @@ def build(args):
     # what to paste into the release: people who land on this page should know it isn't for them
     title = f'在线更新：客户端 {version}' + (f' · 系统层 {system[0]}' if system else '')
     body = ['这些文件是设备在线更新时自动下载的，**不需要手动下载**：在设备的设置页「软件更新」里点「更新」就行。',
-            '要刷机请到 [thinksmart-ubuntu-image 的 Releases](https://github.com/justhalfbit/thinksmart-ubuntu-image/releases) 下载镜像。',
+            '系统镜像项目：[thinksmart-ubuntu-image](https://github.com/yehuangbin948/thinksmart-ubuntu-image)。本发布仅供在线更新，不包含刷机镜像。',
             '', f'### 客户端 {version}', *[f'- {n}' for n in args.note or ['（没有说明）']]]
     if system:
         body += ['', f'### 系统层 {system[0]}', *[f'- {n}' for n in args.system_note or ['（没有说明）']]]
